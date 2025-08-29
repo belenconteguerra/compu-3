@@ -1,2 +1,32 @@
 @charset "utf-8";
 /* CSS Document */
+/* Configuraciones */
+@font-face {
+    font-family: "PT Sans Bold";
+    src: url(font/PTSans-Bold.ttf) format(truetype);
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: "Cabin";
+    src: url(font/Cabin-VariableFont_wdth\,wght.ttf) format(truetype);
+    font-weight: normal;
+    font-size: normal;
+}
+@font-face {
+    font-family: "Cabin Italic";
+    src: url(font/Cabin-Italic-VariableFont_wdth\,wght.ttf) format(truetype);
+    font-weight: italic;
+    font-size: italic;
+}
+
+/*Aplicaciones*/
+
+* {font-family: "Cabin", sans-serif
+}
+
+h1;h2 {font-family: "PT Sans Bold", sans-serif}
+
+footer {font-family: "Cabin Italic", sans-serif}
+a {font-family: "Cabin Italic", sans-serif}
+h3{ font-family: "Honk", system-ui}
