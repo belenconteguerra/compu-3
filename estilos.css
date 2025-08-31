@@ -24,28 +24,63 @@
 
 * {font-family: "Cabin", sans-serif; }
 
-h1;h2 {font-family: "PT Sans Bold", sans-serif;font-size: larger;}
+h1 h2 {font-family: "PT Sans Bold", sans-serif;font-size: larger}
 footer {font-family: "Cabin Italic", sans-serif;
-text-align: center;}
+text-align: center;
+margin: 15px;
+}
+
 a {font-family: "Cabin Italic", sans-serif;font-size: small;}
 h3{ font-family: "Honk", system-ui; font-size: 100px;
 margin: 0;}
 span {font-family: "PT Sans Bold", sans-serif;font-size: large;}
 
+p {max-width: 800px}
+
 header {text-align: center;}
 header .yo{background-color: rgb(132, 202, 141);}
 body{background-color: rgb(155, 241, 167)
 }
-main .bio{text-align: center;
-background-color: rgb(221, 235, 218);}
+
+main .bio{
+display: flex;flex-direction: column;
+border-radius: 30px;
+padding: 15px;
+margin: 50px;
+margin-left: 500px;
+line-height: 15px;
+text-align: center;
+background-color: rgb(221, 235, 218);
+align-items: center;
+box-sizing: border-box; width: 800px;
+}
+
+main .foto-perfil{
+border-radius: 60px;
+margin: 0px;
+}
+
+main .keroppi {
+margin-left: 760px;
+}
 
 main .info1{
+display: inline-block;
 background-color: rgb(221, 235, 218);
 text-align: center;
-
+border-radius: 50px;
+padding: 15px;
+margin: 10px;
+box-sizing: border-box; width: 800px;
+margin-left: 100px;
 }
+
 main .info2 {
+display: inline-block;
 background-color: rgb(221, 235, 218);
 text-align: center;
-
+border-radius: 50px;
+padding: 15px;
+margin: 10px;
+box-sizing: border-box; width: 800px;
 }
