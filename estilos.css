@@ -38,7 +38,9 @@ span {font-family: "PT Sans Bold", sans-serif;font-size: large;}
 p {max-width: 800px}
 
 header {text-align: center;}
-header .yo{background-color: rgb(95, 160, 105);}
+header .yo{background-color: rgb(190, 233, 198);
+border-radius: 30px;
+margin-left: 100px; margin-right: 100px;}
 body{background-color:rgb(132, 202, 141)
 }
 
