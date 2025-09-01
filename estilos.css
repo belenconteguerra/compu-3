@@ -232,6 +232,6 @@ h3 {
 body {
   width: 1920px;
   height: 1080px;
-  margin: 0 auto; /* centra la página si la pantalla es más grande */
-  overflow: auto; /* agrega scroll si la pantalla es más chica */
+  margin: 0 auto; 
+  overflow: auto; 
 }
