@@ -30,10 +30,11 @@
     font-family: "cabin", sans-serif;
 }
 
-h1 h2 {
+h1 h2{
     font-family: "pt sans bold", sans-serif;
     font-size: larger
 }
+
 
 a {
     font-family: "cabin italic", sans-serif;
@@ -137,8 +138,8 @@ main .bio {
     align-items: center;
     box-sizing: border-box;
     width: 800px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 main .foto-perfil {
@@ -176,13 +177,48 @@ main .info{
   gap: 5px;
 }
 
+main .trabajos{
+    background-color: rgb(221, 235, 218);
+    border-radius: 50px;
+    padding: 15px;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    width: 1500px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.trabajos h3 {
+  color: #296819; 
+  margin-bottom: 5px;
+  text-align: center;
+  font-family: "pt sans bold", sans-serif;
+  font-size:xx-large;
+  padding: 0px;
+  line-height: 10px;
+}
+
+.trabajos .galeria {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.trabajos img {
+  width: 200px; 
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/*footer*/
+
 footer {
     font-family: "cabin italic", sans-serif;
     text-align: center;
     margin: 15px;
 }
-
-/*footer*/
 
 footer .abajo {
     background-color: rgb(190, 233, 198);
@@ -192,7 +228,7 @@ footer .abajo {
     margin-right: 650px;
 }
 
-h3 {
+h4 {
     font-family: "honk", system-ui;
     font-size: 100px;
     margin: 0;
