@@ -25,7 +25,7 @@
 * {font-family: "Cabin", sans-serif; }
 
 h1 h2 {font-family: "PT Sans Bold", sans-serif;font-size: larger}
-footer {font-family: "Cabin Italic", sans-serif;
+footer {font-family: "Cabin Italic", sans-serif; /* fijate que no te está trayendo la variable italic porque está mal escrito en el font-face  */
 text-align: center;
 margin: 15px;
 }
@@ -93,12 +93,12 @@ display: flex;flex-direction: column;
 border-radius: 30px;
 padding: 15px;
 margin: 50px;
-margin-left: 500px;
+margin-left: 500px; /* nooooo no se centra con margin!!!! */
 line-height: 15px;
 text-align: center;
 background-color: rgb(221, 235, 218);
 align-items: center;
-box-sizing: border-box; width: 800px;
+box-sizing: border-box; width: 800px; /* por un lado fijate si en pantallas más chicas te sirve ese ancho fijo. y por otro no te olvides de indentar bien el css */
 }
 
 main .foto-perfil{
@@ -107,7 +107,7 @@ margin: 0px;
 }
 
 main .keroppi {
-margin-left: 760px;
+margin-left: 760px; /* nooooooooooooooo */
 }
 
 main .info1{
@@ -117,14 +117,20 @@ text-align: center;
 border-radius: 50px;
 padding: 15px;
 margin: 10px;
-box-sizing: border-box; width: 800px;
+box-sizing: border-box; width: 800px; /* fijate si en pantallas más chicas te sirve ese ancho fijo */
 margin-left: 100px;
 }
+/* si el info1 e info2 tienen las mismas propiedades salvo una te conviene empezar a ahorrar código escribiendo una sola vez pero separando ambas propiedades con una coma así:
 
+main .info1, main .info2 { 
+    todas tus propiedades acá
+}
+
+*/
 main .info2 {
-display: inline-block;
+display: inline-block; /* nosotros para colocar una caja al lado de la otra usamos flex y no inline */
 background-color: rgb(221, 235, 218);
-text-align: center;
+text-align: center; /* guarda que para textos tan largos no está bueno que el párrafo esté centrado */
 border-radius: 50px;
 padding: 15px;
 margin: 10px;
@@ -132,7 +138,7 @@ box-sizing: border-box; width: 800px;
 }
 
 footer .abajo{ background-color: rgb(190, 233, 198);
-text-align: center;
+text-align: center; /* esta propiedad ya se hereda desde footer en la línea 28. no repitas */
 border-radius: 30px;
 margin-left: 650px; margin-right: 650px;
 }
