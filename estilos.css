@@ -32,7 +32,7 @@
 
 h1 h2 {
     font-family: "pt sans bold", sans-serif;
-    font-size: larger
+    font-size: larger;
 }
 
 
@@ -119,14 +119,18 @@ main .foto-perfil {
 
 
 main .info1, .info2{
-    display: inline-block;
+    display: flex; flex-direction: column;
     background-color: rgb(221, 235, 218);
-    text-align: center;
+    text-align: justify;
     border-radius: 50px;
     width: 850px;
     padding: 15px;
     margin: auto;
     box-sizing: border-box;
+}
+
+main h2{
+    text-align: center;
 }
 
 main .info {
@@ -147,7 +151,6 @@ main .trabajos {
 }
 
 .trabajos h3 {
-    color: #296819;
     margin-bottom: 5px;
     text-align: center;
     font-family: "pt sans bold", sans-serif;
@@ -173,14 +176,13 @@ main .trabajos {
 /*footer*/
 
 footer {
-    font-family: "cabin italic", sans-serif;
+    font-family: "cabin", sans-serif;
     text-align: center;
     margin: 15px;
 }
 
 footer .abajo {
     background-color: rgb(190, 233, 198);
-    text-align: center;
     border-radius: 30px;
     margin-left: 650px;
     margin-right: 650px;
