@@ -30,7 +30,7 @@
     font-family: "cabin", sans-serif;
 }
 
-h1 h2{
+h1 h2 {
     font-family: "pt sans bold", sans-serif;
     font-size: larger
 }
@@ -49,43 +49,13 @@ span {
 p {
     max-width: 800px
 }
+
 /*header*/
 
-header .micv {
+header .micv, .contactos, .wiki, .busqueda {
     text-align: left;
     background-color: rgba(146, 241, 122, 0.705);
     border-radius: 5px;
-    border-style: solid;
-    border-color: rgb(96, 182, 100);
-    border-width: 2px;
-    padding: 3px;
-}
-
-header .contactos {
-    text-align: left;
-    background-color: rgb(146, 241, 122, 0.705);
-    border-radius: 5px;
-    border-style: solid;
-    border-color: rgb(96, 182, 100);
-    border-width: 2px;
-    padding: 3px;
-}
-
-header .wiki {
-    text-align: left;
-    background-color: rgb(146, 241, 122, 0.705);
-    border-radius: 5px;
-    border-style: solid;
-    border-color: rgb(96, 182, 100);
-    border-width: 2px;
-    padding: 3px;
-}
-
-header .busqueda {
-    text-align: left;
-    background-color: rgb(146, 241, 122, 0.705);
-    border-radius: 5px;
-    border: 5px;
     border-style: solid;
     border-color: rgb(96, 182, 100);
     border-width: 2px;
@@ -96,8 +66,8 @@ header .navbar {
     padding-left: 20px;
     padding-bottom: 10px;
     display: flex;
-  align-items: center; 
-  gap: 5px;  
+    align-items: center;
+    gap: 5px;
 }
 
 header .yo {
@@ -113,8 +83,8 @@ header .yo {
 header .keroppi {
     align-self: left;
     padding: 5px;
-    margin: auto;;
-    display:contents;
+    margin: auto;
+    display: contents;
 }
 
 
@@ -129,7 +99,7 @@ main .bio {
     display: flex;
     flex-direction: column;
     border-radius: 30px;
-    width:  500px;
+    width: 500px;
     padding: 15px;
     margin: auto;
     line-height: 15px;
@@ -148,36 +118,24 @@ main .foto-perfil {
 }
 
 
-main .info1 {
+main .info1, .info2{
     display: inline-block;
     background-color: rgb(221, 235, 218);
     text-align: center;
     border-radius: 50px;
-    width: 800px;
+    width: 850px;
     padding: 15px;
     margin: auto;
     box-sizing: border-box;
 }
 
-main .info2 {
-    display: inline-block;
-    background-color: rgb(221, 235, 218);
-    text-align: center;
-    border-radius: 50px;
-    width: 800px;
-    padding: 15px;
-    box-sizing: border-box;
-
+main .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
 }
 
-main .info{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  justify-content: center; 
-  gap: 5px;
-}
-
-main .trabajos{
+main .trabajos {
     background-color: rgb(221, 235, 218);
     border-radius: 50px;
     padding: 15px;
@@ -189,27 +147,27 @@ main .trabajos{
 }
 
 .trabajos h3 {
-  color: #296819; 
-  margin-bottom: 5px;
-  text-align: center;
-  font-family: "pt sans bold", sans-serif;
-  font-size:xx-large;
-  padding: 0px;
-  line-height: 10px;
+    color: #296819;
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: "pt sans bold", sans-serif;
+    font-size: xx-large;
+    padding: 0px;
+    line-height: 10px;
 }
 
 .trabajos .galeria {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 .trabajos img {
-  width: 200px; 
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 /*footer*/
@@ -226,6 +184,7 @@ footer .abajo {
     border-radius: 30px;
     margin-left: 650px;
     margin-right: 650px;
+    padding: 5px;
 }
 
 h4 {
@@ -266,8 +225,8 @@ h4 {
 /*Tamaño pagina*/
 
 body {
-  width: 1920px;
-  height: 1080px;
-  margin: 0 auto; 
-  overflow: auto; 
+    width: 1920px;
+    height: 1080px;
+    margin: 0 auto;
+    overflow: auto;
 }
