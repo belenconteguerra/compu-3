@@ -81,7 +81,7 @@ header .yo {
 }
 
 header .keroppi {
-    align-self: left;
+    align-self: left; /* no puede aplicarse esta propiedad porque la etiqueta padre no tiene flex aplicado */
     padding: 5px;
     margin: auto;
     display: contents;
@@ -107,8 +107,8 @@ main .bio {
     background-color: rgb(221, 235, 218);
     align-items: center;
     box-sizing: border-box;
-    width: 800px;
-    margin-top: 25px;
+    width: 800px; /* en la línea 102 ya pusiste un width, no repitas, además no es bueno tener medidas fijas */
+    margin-top: 25px; /* estás repitiendo margin también en la 104 */
     margin-bottom: 25px;
 }
 
@@ -118,12 +118,12 @@ main .foto-perfil {
 }
 
 
-main .info1, .info2{
+main .info1, .info2{ /* si info1 e info2 son exactamente iguales tiene más sentido que los dos se llamen info y aplicar directamente la misma class en ambas etiquetas, aunque podrías no tener una */
     display: flex; flex-direction: column;
     background-color: rgb(221, 235, 218);
     text-align: justify;
     border-radius: 50px;
-    width: 850px;
+    width: 850px; /* por qué medidas fijas ??!?! */
     padding: 15px;
     margin: auto;
     box-sizing: border-box;
@@ -134,7 +134,7 @@ main h2{
 }
 
 main .info {
-    display: grid;
+    display: grid; /* todavía no dimos grid, cambiá esto por flex */
     grid-template-columns: 1fr 1fr;
     justify-content: center;
 }
@@ -147,7 +147,7 @@ main .trabajos {
     padding-top: 5px;
     width: 1500px;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 20px; 
 }
 
 .trabajos h3 {
@@ -184,7 +184,7 @@ footer {
 footer .abajo {
     background-color: rgb(190, 233, 198);
     border-radius: 30px;
-    margin-left: 650px;
+    margin-left: 650px; /* en clases hablamos de que si el margin o padding superan los 80 o 100px está mal y lo más probable es que esto se soluione con flex */
     margin-right: 650px;
     padding: 5px;
 }
@@ -227,7 +227,7 @@ h4 {
 /*Tamaño pagina*/
 
 body {
-    width: 1920px;
+    width: 1920px; /* por qué hay medidas fijas!?!??! hablamos muchas veces de que las cajas deben ser flexibles */
     height: 1080px;
     margin: 0 auto;
     overflow: auto;
