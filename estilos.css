@@ -58,6 +58,15 @@ p {
     max-width: 800px
 }
 
+ h3 {
+    margin-bottom: 5px;
+    text-align: center;
+    font-family: "pt sans bold", sans-serif;
+    font-size: xx-large;
+    padding: 0px;
+    line-height: 10px;
+}
+
 /*header*/
 
 
@@ -150,21 +159,12 @@ h2 {
     padding-top: 5px;
     margin: auto;
     margin-top: 20px;
-}
-
-.trabajos h3 {
-    margin-bottom: 5px;
-    text-align: center;
-    font-family: "pt sans bold", sans-serif;
-    font-size: xx-large;
-    padding: 0px;
-    line-height: 10px;
-}
-
-.trabajos .galeria {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    flex-direction: column
+}
+
+.galeria {
     flex-wrap: wrap;
     margin-top: 20px;
 }
