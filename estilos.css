@@ -70,7 +70,7 @@ p {
     gap: 5px;
 }
 
- .carrera-nombre {
+.carrera-nombre {
     line-height: 12px;
     background-color: rgb(190, 233, 198);
     text-align: center;
@@ -80,7 +80,7 @@ p {
     padding: 5px;
 }
 
-.img{
+.img {
     padding: 5px;
     margin: auto;
     display: contents;
@@ -89,7 +89,7 @@ p {
 
 /*body and main*/
 
-main{
+main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -123,11 +123,11 @@ body {
 
 
 
- h2{
+h2 {
     text-align: center;
 }
 
- .info {
+.info {
     display: flex;
     gap: 50px;
     align-content: center;
@@ -139,9 +139,10 @@ body {
     border-radius: 50px;
     padding: 25px;
     margin: auto;
-    box-sizing: border-box;}
+    box-sizing: border-box;
+}
 
- .trabajos {
+.trabajos {
     background-color: rgb(221, 235, 218);
     border-radius: 50px;
     padding: 30px;
@@ -176,7 +177,7 @@ body {
 
 /*footer*/
 
-footer{
+footer {
     text-align: center;
 }
 
@@ -219,4 +220,3 @@ h4 {
         background-position: -2332px
     }
 }
-
